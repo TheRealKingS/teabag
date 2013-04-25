@@ -85,46 +85,46 @@ namespace teabag
             {
                 sw.WriteLine("<!DOCTYPE html>");
                 Console.WriteLine("<!DOCTYPE html>");
-                System.Threading.Thread.Sleep(50);
+
                 sw.WriteLine("<head>");
                 Console.WriteLine("<head>");
-                System.Threading.Thread.Sleep(50);
+
                 sw.WriteLine("<title>{0}</title>", title);
                 Console.WriteLine("<title>{0}</title>", title);
-                System.Threading.Thread.Sleep(50);
-                sw.WriteLine("<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\n text-align: center;\n margin-left: 15%; margin-right: 15%; }\n </style>");
-                Console.WriteLine("<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\n text-align: center;\n margin-left: 15%; margin-right: 15%; }\n </style>");
-                System.Threading.Thread.Sleep(50);
+
+                sw.WriteLine("<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\ntext-align: center;\nmargin-left: 15%; \nmargin-right: 15%; }\n</style>");
+                Console.WriteLine("<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\ntext-align: center;\nmargin-left: 15%; \nmargin-right: 15%; }\n</style>");
+                
                 sw.WriteLine("</head>");
                 Console.WriteLine("</head>");
-                System.Threading.Thread.Sleep(50);
+
                 sw.WriteLine("<body text-align=\"center\">");
                 Console.WriteLine("<body text-align=\"center\">");
-                System.Threading.Thread.Sleep(50);
+
                 sw.WriteLine("<h2>{0}</h2>", title);
                 Console.WriteLine("<h2>{0}</h2>", title);
-                System.Threading.Thread.Sleep(50);
+
                 sw.WriteLine("<p>{0}</p>", text);
                 Console.WriteLine("<p>{0}</p>", text);
-                System.Threading.Thread.Sleep(50);
+
                 sw.WriteLine("<br />");
                 Console.WriteLine("<br />");
-                System.Threading.Thread.Sleep(50);
+
                 sw.WriteLine("<hr />");
                 Console.WriteLine("<hr />");
-                System.Threading.Thread.Sleep(50);
+
                 sw.Write("<a href=\"{0}\">{1}</a> ", linkurl1, linktext1);
                 Console.Write("<a href=\"{0}\">{1}</a> ", linkurl1, linktext1);
-                System.Threading.Thread.Sleep(50);
+
                 sw.Write("<a href=\"{0}\">{1}</a> ", linkurl2, linktext2);
                 Console.Write("<a href=\"{0}\">{1}</a> ", linkurl2, linktext2);
-                System.Threading.Thread.Sleep(50);
+
                 sw.Write("<a href=\"{0}\">{1}</a> ", linkurl3, linktext3);
                 Console.Write("<a href=\"{0}\">{1}</a> ", linkurl3, linktext3);
-                System.Threading.Thread.Sleep(50);
+
                 sw.WriteLine("</body>");
                 Console.WriteLine("</body>");
-                System.Threading.Thread.Sleep(50);
+
                 sw.WriteLine("</html>");
                 Console.WriteLine("</html>");
             }
