@@ -27,140 +27,110 @@ namespace teabag
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Console.Title = "teabag | © 2013 pixeldesu";
-            Console.Write("Welcome to ");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("teabag build-04252013");
-            Console.ResetColor();
-            Console.WriteLine(" by pixeldesu");
-            Console.WriteLine("This little tool will create a little 'website' for you.");
-            Console.WriteLine("");
+        static void Main (string[] args)
+		{
+			Console.Title = "teabag | © 2013 pixeldesu";
+			Console.Write ("Welcome to ");
+			Console.ForegroundColor = ConsoleColor.Cyan;
+			Console.Write ("teabag build-04252013");
+			Console.ResetColor ();
+			Console.WriteLine (" by pixeldesu");
+			Console.WriteLine ("This little tool will create a little 'website' for you.");
+			Console.WriteLine ("");
 
-            Console.Write("[");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("Step 1");
-            Console.ResetColor();
-            Console.WriteLine("] Contents");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("//Enter your title here");
-            Console.ResetColor();
-            Console.Write("Title: ");
-            string title = Console.ReadLine();
-            Console.WriteLine("");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("//Enter a little text for visitors here!");
-            Console.ResetColor();
-            Console.Write("Text: ");
-            string text = Console.ReadLine();
-            Console.WriteLine("");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("//Add some links to webpages (currently 3, while testing release)");
-            Console.ResetColor();
-            Console.Write("Link-");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("Text");
-            Console.ResetColor();
-            Console.Write(" 1: ");
-            Console.ResetColor();
-            string linktext1 = Console.ReadLine();
-            Console.Write("Link-");
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.Write("URL");
-            Console.ResetColor();
-            Console.Write(" 1: ");
-            Console.ResetColor();
-            string linkurl1 = Console.ReadLine();
-            Console.WriteLine("");
-            Console.Write("Link-");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("Text");
-            Console.ResetColor();
-            Console.Write(" 2: ");
-            Console.ResetColor();
-            string linktext2 = Console.ReadLine();
-            Console.Write("Link-");
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.Write("URL");
-            Console.ResetColor();
-            Console.Write(" 2: ");
-            Console.ResetColor();
-            string linkurl2 = Console.ReadLine();
-            Console.WriteLine("");
-            Console.Write("Link-");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("Text");
-            Console.ResetColor();
-            Console.Write(" 3: ");
-            Console.ResetColor();
-            string linktext3 = Console.ReadLine();
-            Console.Write("Link-");
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.Write("URL");
-            Console.ResetColor();
-            Console.Write(" 3: ");
-            Console.ResetColor();
-            string linkurl3 = Console.ReadLine();
-            Console.Write("[");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("Step 1");
-            Console.ResetColor();
-            Console.WriteLine("] Finished!");
-            Console.WriteLine("");
+			Console.Write ("[");
+			Console.ForegroundColor = ConsoleColor.Cyan;
+			Console.Write ("Step 1");
+			Console.ResetColor ();
+			Console.WriteLine ("] Contents");
+			Console.ForegroundColor = ConsoleColor.Cyan;
+			Console.WriteLine ("//Enter your title here");
+			Console.ResetColor ();
+			Console.Write ("Title: ");
+			string title = Console.ReadLine ();
+			Console.WriteLine ("");
+			Console.ForegroundColor = ConsoleColor.Cyan;
+			Console.WriteLine ("//Enter a little text for visitors here!");
+			Console.ResetColor ();
+			Console.Write ("Text: ");
+			string text = Console.ReadLine ();
+			Console.WriteLine ("");
+			Console.ForegroundColor = ConsoleColor.Cyan;
+			Console.WriteLine ("//Add some links to webpages (currently 3, while testing release)");
+			Console.ResetColor ();
+			Console.Write ("Link-");
+			Console.ForegroundColor = ConsoleColor.Cyan;
+			Console.Write ("Text");
+			Console.ResetColor ();
+			Console.Write (" 1: ");
+			Console.ResetColor ();
+			string linktext1 = Console.ReadLine ();
+			Console.Write ("Link-");
+			Console.ForegroundColor = ConsoleColor.DarkCyan;
+			Console.Write ("URL");
+			Console.ResetColor ();
+			Console.Write (" 1: ");
+			Console.ResetColor ();
+			string linkurl1 = Console.ReadLine ();
+			Console.WriteLine ("");
+			Console.Write ("Link-");
+			Console.ForegroundColor = ConsoleColor.Cyan;
+			Console.Write ("Text");
+			Console.ResetColor ();
+			Console.Write (" 2: ");
+			Console.ResetColor ();
+			string linktext2 = Console.ReadLine ();
+			Console.Write ("Link-");
+			Console.ForegroundColor = ConsoleColor.DarkCyan;
+			Console.Write ("URL");
+			Console.ResetColor ();
+			Console.Write (" 2: ");
+			Console.ResetColor ();
+			string linkurl2 = Console.ReadLine ();
+			Console.WriteLine ("");
+			Console.Write ("Link-");
+			Console.ForegroundColor = ConsoleColor.Cyan;
+			Console.Write ("Text");
+			Console.ResetColor ();
+			Console.Write (" 3: ");
+			Console.ResetColor ();
+			string linktext3 = Console.ReadLine ();
+			Console.Write ("Link-");
+			Console.ForegroundColor = ConsoleColor.DarkCyan;
+			Console.Write ("URL");
+			Console.ResetColor ();
+			Console.Write (" 3: ");
+			Console.ResetColor ();
+			string linkurl3 = Console.ReadLine ();
+			Console.Write ("[");
+			Console.ForegroundColor = ConsoleColor.Green;
+			Console.Write ("Step 1");
+			Console.ResetColor ();
+			Console.WriteLine ("] Finished!");
+			Console.WriteLine ("");
 
-            Console.Write("[");
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("Step 2");
-            Console.ResetColor();
-            Console.WriteLine("] Writing File");
+			Console.Write ("[");
+			Console.ForegroundColor = ConsoleColor.Cyan;
+			Console.Write ("Step 2");
+			Console.ResetColor ();
+			Console.WriteLine ("] Writing File");
 
-            using (StreamWriter sw = new StreamWriter("index.html")) 
-            {
-                sw.WriteLine("<!DOCTYPE html>");
-                Console.WriteLine("<!DOCTYPE html>");
-
-                sw.WriteLine("<head>");
-                Console.WriteLine("<head>");
-
-                sw.WriteLine("<title>{0}</title>", title);
-                Console.WriteLine("<title>{0}</title>", title);
-
-                sw.WriteLine("<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\ntext-align: center;\nmargin-left: 15%; \nmargin-right: 15%; }\n</style>");
-                Console.WriteLine("<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\ntext-align: center;\nmargin-left: 15%; \nmargin-right: 15%; }\n</style>");
-                
-                sw.WriteLine("</head>");
-                Console.WriteLine("</head>");
-
-                sw.WriteLine("<body text-align=\"center\">");
-                Console.WriteLine("<body text-align=\"center\">");
-
-                sw.WriteLine("<h2>{0}</h2>", title);
-                Console.WriteLine("<h2>{0}</h2>", title);
-
-                sw.WriteLine("<p>{0}</p>", text);
-                Console.WriteLine("<p>{0}</p>", text);
-
-                sw.WriteLine("<br />");
-                Console.WriteLine("<br />");
-
-                sw.WriteLine("<hr />");
-                Console.WriteLine("<hr />");
-
-                sw.Write("<a href=\"{0}\">{1}</a> \n", linkurl1, linktext1);
-                Console.Write("<a href=\"{0}\">{1}</a> \n", linkurl1, linktext1);
-
-                sw.Write("<a href=\"{0}\">{1}</a> \n", linkurl2, linktext2);
-                Console.Write("<a href=\"{0}\">{1}</a> \n", linkurl2, linktext2);
-
-                sw.Write("<a href=\"{0}\">{1}</a>", linkurl3, linktext3);
-                Console.Write("<a href=\"{0}\">{1}</a>", linkurl3, linktext3);
-
-                sw.WriteLine("</body>");
-                Console.WriteLine("</body>");
-
-                sw.WriteLine("</html>");
-                Console.WriteLine("</html>");
+			using (StreamWriter sw = new StreamWriter("index.html")) {
+				ConsoleStreamWriteLine (sw, "<!DOCTYPE html>");
+				ConsoleStreamWriteLine (sw, "<head>");
+				ConsoleStreamWriteLine (sw, string.Format ("<title>{0}</title>", title));
+				ConsoleStreamWrite (sw, "<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\ntext-align: center;\nmargin-left: 15%; \nmargin-right: 15%; }\n</style>");
+				ConsoleStreamWriteLine (sw, "</head>");
+				ConsoleStreamWriteLine (sw, "<body text-align=\"center\">");
+				ConsoleStreamWrite (sw, string.Format ("<h2>{0}</h2>", title));
+				ConsoleStreamWriteLine (sw, string.Format ("<p>{0}</p>", text));
+				ConsoleStreamWriteLine (sw, "<br />");
+				ConsoleStreamWriteLine (sw, "<hr />");
+				ConsoleStreamWrite (sw, string.Format ("<a href=\"{0}\">{1}</a> \n", linkurl1, linktext1));
+				ConsoleStreamWrite (sw, string.Format ("<a href=\"{0}\">{1}</a> \n", linkurl2, linktext2));
+				ConsoleStreamWrite (sw, string.Format ("<a href=\"{0}\">{1}</a>", linkurl3, linktext3));
+                ConsoleStreamWriteLine (sw, "</body>");
+                ConsoleStreamWriteLine (sw, "</html>");
             }
             Console.Write("[");
             Console.ForegroundColor = ConsoleColor.Green;
@@ -173,5 +143,40 @@ namespace teabag
             Console.ReadKey();
 
         }
+		
+		/// <summary>
+		/// Writes out a string to both a stream writer and a console.
+		/// </summary>
+		/// <returns>
+		/// It's a fucking void.
+		/// </returns>
+		/// <param name='sw'>
+		/// A StreamWriter object.
+		/// </param>
+		/// <param name='s'>
+		/// The string to be written
+		/// </param>
+		static void ConsoleStreamWrite (StreamWriter sw, string s)
+		{
+			sw.Write (s);
+			Console.WriteLine (s);
+		}
+		
+		/// <summary>
+		/// Writes out a string to both a stream writer and a console and terminates it with a newline.
+		/// </summary>
+		/// <returns>
+		/// It's a fucking void.
+		/// </returns>
+		/// <param name='sw'>
+		/// A StreamWriter object.
+		/// </param>
+		/// <param name='s'>
+		/// The string to be written
+		/// </param>
+		static void ConsoleStreamWriteLine (StreamWriter sw, string s)
+		{
+			ConsoleStreamWrite (sw, s + "\n");
+		}
     }
 }
