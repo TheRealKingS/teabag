@@ -32,7 +32,7 @@ namespace teabag
             Console.Title = "teabag | © 2013 pixeldesu";
             Console.Write("Welcome to ");
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("teabag v0.3-alpha");
+            Console.Write("teabag build-04252013");
             Console.ResetColor();
             Console.WriteLine(" by pixeldesu");
             Console.WriteLine("This little tool will create a little 'website' for you.");
@@ -56,8 +56,8 @@ namespace teabag
             string text = Console.ReadLine();
             Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.ResetColor();
             Console.WriteLine("//Add some links to webpages (currently 3, while testing release)");
+            Console.ResetColor();
             Console.Write("Link-");
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Write("Text");
