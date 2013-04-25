@@ -68,10 +68,8 @@ namespace teabag
             string linktext3 = Console.ReadLine();
             Console.Write("Link-URL 3: ");
             string linkurl3 = Console.ReadLine();
-            Console.WriteLine("");
-
             Console.Write("[");
-            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Step 1");
             Console.ResetColor();
             Console.WriteLine("] Finished!");
@@ -93,6 +91,9 @@ namespace teabag
                 System.Threading.Thread.Sleep(50);
                 sw.WriteLine("<title>{0}</title>", title);
                 Console.WriteLine("<title>{0}</title>", title);
+                System.Threading.Thread.Sleep(50);
+                sw.WriteLine("<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\n text-align: center;\n margin-left: 15%; margin-right: 15%; }\n </style>");
+                Console.WriteLine("<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\n text-align: center;\n margin-left: 15%; margin-right: 15%; }\n </style>");
                 System.Threading.Thread.Sleep(50);
                 sw.WriteLine("</head>");
                 Console.WriteLine("</head>");
@@ -127,9 +128,8 @@ namespace teabag
                 sw.WriteLine("</html>");
                 Console.WriteLine("</html>");
             }
-            Console.WriteLine("");
             Console.Write("[");
-            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Step 2");
             Console.ResetColor();
             Console.WriteLine("] Finished!");
