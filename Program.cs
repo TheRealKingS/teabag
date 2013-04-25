@@ -113,14 +113,14 @@ namespace teabag
                 sw.WriteLine("<hr />");
                 Console.WriteLine("<hr />");
 
-                sw.Write("<a href=\"{0}\">{1}</a> ", linkurl1, linktext1);
-                Console.Write("<a href=\"{0}\">{1}</a> ", linkurl1, linktext1);
+                sw.Write("<a href=\"{0}\">{1}</a> \n", linkurl1, linktext1);
+                Console.Write("<a href=\"{0}\">{1}</a> \n", linkurl1, linktext1);
 
-                sw.Write("<a href=\"{0}\">{1}</a> ", linkurl2, linktext2);
-                Console.Write("<a href=\"{0}\">{1}</a> ", linkurl2, linktext2);
+                sw.Write("<a href=\"{0}\">{1}</a> \n", linkurl2, linktext2);
+                Console.Write("<a href=\"{0}\">{1}</a> \n", linkurl2, linktext2);
 
-                sw.Write("<a href=\"{0}\">{1}</a> ", linkurl3, linktext3);
-                Console.Write("<a href=\"{0}\">{1}</a> ", linkurl3, linktext3);
+                sw.Write("<a href=\"{0}\">{1}</a>", linkurl3, linktext3);
+                Console.Write("<a href=\"{0}\">{1}</a>", linkurl3, linktext3);
 
                 sw.WriteLine("</body>");
                 Console.WriteLine("</body>");
