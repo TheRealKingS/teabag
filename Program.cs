@@ -22,6 +22,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using teabag;
 
 namespace teabag
 {
@@ -116,21 +117,21 @@ namespace teabag
 			Console.WriteLine ("] Writing File");
 
 			using (StreamWriter sw = new StreamWriter("index.html")) {
-				ConsoleStreamWriteLine (sw, "<!DOCTYPE html>");
-				ConsoleStreamWriteLine (sw, "<head>");
-				ConsoleStreamWriteLine (sw, string.Format ("<title>{0}</title>", title));
-				ConsoleStreamWrite (sw, "<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\ntext-align: center;\nmargin-left: 15%; \nmargin-right: 15%; }\n</style>");
-				ConsoleStreamWriteLine (sw, "</head>");
-				ConsoleStreamWriteLine (sw, "<body text-align=\"center\">");
-				ConsoleStreamWrite (sw, string.Format ("<h2>{0}</h2>", title));
-				ConsoleStreamWriteLine (sw, string.Format ("<p>{0}</p>", text));
-				ConsoleStreamWriteLine (sw, "<br />");
-				ConsoleStreamWriteLine (sw, "<hr />");
-				ConsoleStreamWrite (sw, string.Format ("<a href=\"{0}\">{1}</a> \n", linkurl1, linktext1));
-				ConsoleStreamWrite (sw, string.Format ("<a href=\"{0}\">{1}</a> \n", linkurl2, linktext2));
-				ConsoleStreamWrite (sw, string.Format ("<a href=\"{0}\">{1}</a>", linkurl3, linktext3));
-                ConsoleStreamWriteLine (sw, "</body>");
-                ConsoleStreamWriteLine (sw, "</html>");
+				tealeaf.ConsoleStreamWriteLine (sw, "<!DOCTYPE html>");
+				tealeaf.ConsoleStreamWriteLine (sw, "<head>");
+                tealeaf.ConsoleStreamWriteLine(sw, string.Format("<title>{0}</title>", title));
+                tealeaf.ConsoleStreamWrite(sw, "<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\ntext-align: center;\nmargin-left: 15%; \nmargin-right: 15%; }\n</style>");
+                tealeaf.ConsoleStreamWriteLine(sw, "</head>");
+                tealeaf.ConsoleStreamWriteLine(sw, "<body text-align=\"center\">");
+                tealeaf.ConsoleStreamWrite(sw, string.Format("<h2>{0}</h2>", title));
+                tealeaf.ConsoleStreamWriteLine(sw, string.Format("<p>{0}</p>", text));
+                tealeaf.ConsoleStreamWriteLine(sw, "<br />");
+                tealeaf.ConsoleStreamWriteLine(sw, "<hr />");
+                tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a> \n", linkurl1, linktext1));
+                tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a> \n", linkurl2, linktext2));
+                tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a>", linkurl3, linktext3));
+                tealeaf.ConsoleStreamWriteLine(sw, "</body>");
+                tealeaf.ConsoleStreamWriteLine(sw, "</html>");
             }
             Console.Write("[");
             Console.ForegroundColor = ConsoleColor.Green;
@@ -143,40 +144,5 @@ namespace teabag
             Console.ReadKey();
 
         }
-		
-		/// <summary>
-		/// Writes out a string to both a stream writer and a console.
-		/// </summary>
-		/// <returns>
-		/// It's a fucking void.
-		/// </returns>
-		/// <param name='sw'>
-		/// A StreamWriter object.
-		/// </param>
-		/// <param name='s'>
-		/// The string to be written
-		/// </param>
-		static void ConsoleStreamWrite (StreamWriter sw, string s)
-		{
-			sw.Write (s);
-			Console.WriteLine (s);
-		}
-		
-		/// <summary>
-		/// Writes out a string to both a stream writer and a console and terminates it with a newline.
-		/// </summary>
-		/// <returns>
-		/// It's a fucking void.
-		/// </returns>
-		/// <param name='sw'>
-		/// A StreamWriter object.
-		/// </param>
-		/// <param name='s'>
-		/// The string to be written
-		/// </param>
-		static void ConsoleStreamWriteLine (StreamWriter sw, string s)
-		{
-			ConsoleStreamWrite (sw, s + "\n");
-		}
     }
 }
