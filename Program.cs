@@ -33,7 +33,7 @@ namespace teabag
 			Console.Title = "teabag | © 2013 pixeldesu";
 			Console.Write ("Welcome to ");
 			Console.ForegroundColor = ConsoleColor.Cyan;
-			Console.Write ("teabag build-04252013");
+			Console.Write ("teabag build-04262013");
 			Console.ResetColor ();
 			Console.WriteLine (" by pixeldesu");
 			Console.WriteLine ("This little tool will create a little 'website' for you.");
@@ -126,8 +126,8 @@ namespace teabag
                 tealeaf.ConsoleStreamWrite(sw, string.Format("<h2>{0}</h2>", title));
                 tealeaf.ConsoleStreamWrite(sw, string.Format("<p>{0}</p>", text));
                 tealeaf.ConsoleStreamWrite(sw, "<hr />");
-                tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a>", linkurl1, linktext1));
-                tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a>", linkurl2, linktext2));
+                tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a> ", linkurl1, linktext1));
+                tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a> ", linkurl2, linktext2));
                 tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a>", linkurl3, linktext3));
                 tealeaf.ConsoleStreamWrite(sw, "</body>");
                 tealeaf.ConsoleStreamWrite(sw, "</html>");

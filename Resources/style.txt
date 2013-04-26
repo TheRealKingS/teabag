@@ -2,8 +2,8 @@
 body {
 font-family: "Helvetica Neue", Arial, sans-serif;
 text-align: center;
-margin-left: 15%; 
-margin-right: 15%; }
+margin-left: 25%; 
+margin-right: 25%; }
 
 h1, h2, h3, h4, h5, h6 {
 border-bottom: 1px solid #aeaeae;
