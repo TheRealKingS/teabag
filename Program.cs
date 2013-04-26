@@ -120,7 +120,7 @@ namespace teabag
 				tealeaf.ConsoleStreamWriteLine (sw, "<!DOCTYPE html>");
 				tealeaf.ConsoleStreamWriteLine (sw, "<head>");
                 tealeaf.ConsoleStreamWriteLine(sw, string.Format("<title>{0}</title>", title));
-                tealeaf.ConsoleStreamWrite(sw, "<style type=\"text/css\">\nbody {\nfont-family: \"Helvetica Neue\", Arial, sans-serif;\ntext-align: center;\nmargin-left: 15%; \nmargin-right: 15%; }\n</style>");
+                tealeaf.ConsoleStreamWrite(sw, teabag.Properties.Resources.style.ToString());
                 tealeaf.ConsoleStreamWriteLine(sw, "</head>");
                 tealeaf.ConsoleStreamWriteLine(sw, "<body text-align=\"center\">");
                 tealeaf.ConsoleStreamWrite(sw, string.Format("<h2>{0}</h2>", title));
