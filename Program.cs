@@ -117,21 +117,20 @@ namespace teabag
 			Console.WriteLine ("] Writing File");
 
 			using (StreamWriter sw = new StreamWriter("index.html")) {
-				tealeaf.ConsoleStreamWriteLine (sw, "<!DOCTYPE html>");
-				tealeaf.ConsoleStreamWriteLine (sw, "<head>");
-                tealeaf.ConsoleStreamWriteLine(sw, string.Format("<title>{0}</title>", title));
+				tealeaf.ConsoleStreamWrite(sw, "<!DOCTYPE html>");
+				tealeaf.ConsoleStreamWrite(sw, "<head>");
+                tealeaf.ConsoleStreamWrite(sw, string.Format("<title>{0}</title>", title));
                 tealeaf.ConsoleStreamWrite(sw, teabag.Properties.Resources.style.ToString());
-                tealeaf.ConsoleStreamWriteLine(sw, "</head>");
-                tealeaf.ConsoleStreamWriteLine(sw, "<body text-align=\"center\">");
+                tealeaf.ConsoleStreamWrite(sw, "</head>");
+                tealeaf.ConsoleStreamWrite(sw, "<body text-align=\"center\">");
                 tealeaf.ConsoleStreamWrite(sw, string.Format("<h2>{0}</h2>", title));
-                tealeaf.ConsoleStreamWriteLine(sw, string.Format("<p>{0}</p>", text));
-                tealeaf.ConsoleStreamWriteLine(sw, "<br />");
-                tealeaf.ConsoleStreamWriteLine(sw, "<hr />");
-                tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a> \n", linkurl1, linktext1));
-                tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a> \n", linkurl2, linktext2));
+                tealeaf.ConsoleStreamWrite(sw, string.Format("<p>{0}</p>", text));
+                tealeaf.ConsoleStreamWrite(sw, "<hr />");
+                tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a>", linkurl1, linktext1));
+                tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a>", linkurl2, linktext2));
                 tealeaf.ConsoleStreamWrite(sw, string.Format("<a href=\"{0}\">{1}</a>", linkurl3, linktext3));
-                tealeaf.ConsoleStreamWriteLine(sw, "</body>");
-                tealeaf.ConsoleStreamWriteLine(sw, "</html>");
+                tealeaf.ConsoleStreamWrite(sw, "</body>");
+                tealeaf.ConsoleStreamWrite(sw, "</html>");
             }
             Console.Write("[");
             Console.ForegroundColor = ConsoleColor.Green;
